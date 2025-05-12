@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Halaman Utama - My SaaS App</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #header {
+            background-color: #fff;
+            padding: 5px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .app-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: auto;
+            color: #f1d204;
+        }
+        .header-navigation ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin-left: auto;
+            align-items: center;
+        }
+        .header-navigation ul li {
+            margin-right: 15px;
+        }
+        .header-navigation ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px;
+        }
+        .header-navigation ul li a:hover {
+            color: #f1d204;
+        }
+        .container {
+            padding: 60px 20px 20px;
+        }
+        .store-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .store-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            width: calc(33.333% - 20px);
+            position: relative; /* Untuk posisi gambar */
+        }
+        .store-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px; /* Jarak antara gambar dan judul */
+        }
+        .cta-button {
+            background-color: #f1d204;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .cta-button:hover {
+            background: rgba(241, 210, 4, 0.9);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <span class="app-name">PrintingApp</span>
+            <nav class="header-navigation">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="login.php">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   
+
+            <h2>Cek Status Pesanan</h2>
+            <form method="GET">
+                <label for="order_number">Masukkan Nomor Pesanan:</label>
+                <input type="text" id="order_number" name="order_number" required>
+                <button type="submit" class="cta-button">Cek Status</button>
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Printing App. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
